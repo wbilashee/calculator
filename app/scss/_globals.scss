@@ -83,6 +83,7 @@ a {
 .calculator {
   width: 90%;
   margin: auto;
+  height: 45rem;
   flex-direction: column;
 
   @include breakpoint-up(medium) {

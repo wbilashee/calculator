@@ -1,0 +1,24 @@
+.screen {
+  width: 100%;
+  height: 5.625rem;
+  overflow: hidden;
+  background: var(--screen-bg);
+
+  @include breakpoint-up(medium) {
+    height: 8.125rem;
+  }
+
+  input {
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    text-align: right;
+    padding: 1em 0.5em;
+    font-family: inherit;
+    color: var(--screen-txt);
+
+    @include breakpoint-up(medium) {
+      font-size: 1.5em;
+    }
+  }
+}

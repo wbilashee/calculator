@@ -83,6 +83,7 @@ a {
 .calculator {
   width: 90%;
   margin: auto;
+  height: 45rem;
   flex-direction: column;
 }
 @media (min-width: 40em) {
@@ -161,4 +162,30 @@ a {
   position: relative;
   border-radius: 50%;
   background-color: var(--key-bg-eq);
+}
+
+.screen {
+  width: 100%;
+  height: 5.625rem;
+  overflow: hidden;
+  background: var(--screen-bg);
+}
+@media (min-width: 40em) {
+  .screen {
+    height: 8.125rem;
+  }
+}
+.screen input {
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  text-align: right;
+  padding: 1em 0.5em;
+  font-family: inherit;
+  color: var(--screen-txt);
+}
+@media (min-width: 40em) {
+  .screen input {
+    font-size: 1.5em;
+  }
 }/*# sourceMappingURL=style.css.map */
