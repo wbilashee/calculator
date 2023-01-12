@@ -269,4 +269,19 @@ a {
   .keypad button.del {
     font-size: 0.7em;
   }
+}
+
+.footer {
+  text-align: center;
+  padding-bottom: 2.75rem;
+  background: var(--main-bg);
+}
+.footer__attribution {
+  padding: 0 1.5rem;
+  line-height: 1.75;
+  font-size: 0.75rem;
+  color: var(--screen-txt);
+}
+.footer__attribution a {
+  color: var(--screen-txt);
 }/*# sourceMappingURL=style.css.map */
