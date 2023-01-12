@@ -1,0 +1,86 @@
+.keypad {
+  width: 100%;
+  height: 30rem;
+  padding: 0.65em;
+  background-color: var(--keypad-bg-toggle);
+
+  @include breakpoint-up(medium) {
+    padding: 1em;
+  }
+
+  table {
+    width: 100%;
+    height: 100%;
+
+    tbody {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+
+      tr {
+        width: 100%;
+      }
+    }
+  }
+
+  button {
+    border: none;
+    outline: none;
+    width: 3.75rem;
+    height: 3.75rem;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 0.85em;
+    font-family: inherit;
+    line-height: 3.75rem;
+    border-radius: 0.3125rem;
+    color: var(--key-color-main);
+    background: var(--key-color);
+    box-shadow: 0 5px 0 var(--key-shadow);
+
+    @include breakpoint-up(medium) {
+      width: 6.25rem;
+      font-size: 1em;
+      border-radius: 0.625rem;
+    }
+
+    &:active {
+      transform: scale(0.8);
+    }
+
+    &.rst {
+      width: 8.4375rem;
+      font-size: 0.5em;
+      color: var(--rst-del-color);
+      background: var(--key-bg-del-reset);
+      box-shadow: 0 5px 0 var(--key-del-reset-shadow);
+
+      @include breakpoint-up(medium) {
+        width: 14.0625rem;
+        font-size: 0.7em;
+      }
+    }
+
+    &.eq {
+      width: 8.4375rem;
+      color: var(--eq-color);
+      background: var(--key-bg-eq);
+      box-shadow: 0 5px 0 var(--key-eq-shadow);
+
+      @include breakpoint-up(medium) {
+        width: 14.0625rem;
+      }
+    }
+
+    &.del {
+      font-size: 0.5em;
+      color: var(--rst-del-color);
+      background: var(--key-bg-del-reset);
+      box-shadow: 0 5px 0 var(--key-del-reset-shadow);
+
+      @include breakpoint-up(medium) {
+        font-size: 0.7em;
+      }
+    }
+  }
+}

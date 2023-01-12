@@ -71,24 +71,20 @@ a {
 }
 
 .container {
-  padding: 0;
   width: 100%;
+  padding: 2.25rem 1.25rem;
   background: var(--main-bg);
 
   @include breakpoint-up(medium) {
-    padding: 2rem;
+    padding: 4.5rem 1.5rem;
   }
 }
 
 .calculator {
-  width: 90%;
   margin: auto;
   height: 45rem;
+  max-width: 33.75rem;
   flex-direction: column;
-
-  @include breakpoint-up(medium) {
-    width: 33.75rem;
-  }
 
   > * {
     border-radius: 0.625rem;

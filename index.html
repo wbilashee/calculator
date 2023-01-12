@@ -33,7 +33,7 @@
             </label>
           </div>
         </header>
-        <article class="screen">
+        <article class="screen flex flex-ai-c flex-jc-c">
           <input
             type="text"
             name="number"
@@ -41,6 +41,44 @@
             id="screen-input"
             placeholder="123"
           />
+        </article>
+        <article class="keypad">
+          <table>
+            <tbody class="flex flex-jc-sb">
+              <tr class="flex flex-jc-sb">
+                <td><button>7</button></td>
+                <td><button>8</button></td>
+                <td><button>9</button></td>
+                <td><button class="del">DEL</button></td>
+              </tr>
+              <tr class="flex flex-jc-sb">
+                <td><button>4</button></td>
+                <td><button>5</button></td>
+                <td><button>6</button></td>
+                <td><button>+</button></td>
+              </tr>
+              <tr class="flex flex-jc-sb">
+                <td><button>1</button></td>
+                <td><button>2</button></td>
+                <td><button>3</button></td>
+                <td><button>-</button></td>
+              </tr>
+              <tr class="flex flex-jc-sb">
+                <td><button>.</button></td>
+                <td><button>0</button></td>
+                <td><button>/</button></td>
+                <td><button>x</button></td>
+              </tr>
+              <tr class="flex flex-jc-sb">
+                <td colspan="2">
+                  <button class="rst">RESET</button>
+                </td>
+                <td colspan="2">
+                  <button class="eq">=</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </article>
       </section>
     </main>
