@@ -64,6 +64,10 @@ body {
   height: 100vh;
   font-size: 2em;
   font-family: "Spartan", sans-serif;
+
+  > * {
+    transition: color 0.5s, background 1s ease;
+  }
 }
 
 a {

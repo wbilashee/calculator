@@ -64,6 +64,9 @@ body {
   font-size: 2em;
   font-family: "Spartan", sans-serif;
 }
+body > * {
+  transition: color 0.5s, background 1s ease;
+}
 
 a {
   text-decoration: none;
